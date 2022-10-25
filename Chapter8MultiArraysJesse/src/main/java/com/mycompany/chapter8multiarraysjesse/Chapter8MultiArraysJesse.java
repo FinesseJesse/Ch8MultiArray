@@ -10,7 +10,7 @@ package com.mycompany.chapter8multiarraysjesse;
  * @author jswai
  */
 public class Chapter8MultiArraysJesse {
-
+//create array
     public static void main(String[] args) {
         int[][] employeeHours = 
             {{2 ,4, 3, 4, 5, 8, 8},
@@ -22,7 +22,7 @@ public class Chapter8MultiArraysJesse {
              {3, 7, 4, 8, 3, 8, 4},
              {6, 3, 5, 9, 2, 7, 9}};
              
-        //int[][] totalHoursPerEmployee = new int[7][1];
+       
         int[] totalHoursPerEmployee = sumEmployeeHours(employeeHours);
         int[] indexList = new int[totalHoursPerEmployee.length];
         sortWhileKeepingIndices(totalHoursPerEmployee, indexList);
@@ -45,7 +45,7 @@ public class Chapter8MultiArraysJesse {
             totalHoursPerEmployee[i] = sum;
         }
         return totalHoursPerEmployee;
-    }
+    }//sum up hours
     
     static void sortWhileKeepingIndices(int[] totalHours, int[] indexList) {
         //fill indexList
